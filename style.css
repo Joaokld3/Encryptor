@@ -1,0 +1,136 @@
+:root {  
+  --color-green: #dfff0e;  
+  --color-orange: #3279eb;
+  --color-purple: #ff0f0f;
+}
+body {
+  font-family: 'DynaPuff', cursive;  background-image: url(https://c.tenor.com/eeEA_cEAEbQAAAAC/stars-star.gif);  margin: 1% 1% 1% 1%;
+}
+.head {  
+  display: flex;  justify-content: center;  margin: 0 0 1% 0; width: 100%;height: auto;
+}
+#logo{
+  margin-right: 2rem;
+}
+#logob{
+  width: 80px; height: 60px; margin-left: 2rem;
+}
+#title{
+  font-size: 30px; text-align: center; color:crimson;
+}
+#title:hover{
+color: #c78c19;    text-decoration: underline;
+}
+.content{
+  margin: 0; width: 100%; height: 100%;background-color: transparent;
+}
+.up{
+  float: left;  width: 100%;  height: 120px;
+}
+#inputText{
+  width: 60%;  height: 85%;  margin:  0 2% 2% 20%; border-radius: 1rem; border: 3px white; border-style: double;text-align: center; background-color: transparent;color: aliceblue;font-family: 'DynaPuff', cursive; font-size: 16px;
+}
+.buttons{
+  margin: 1% 0 0 0;  display: flex;  justify-content: center; 
+  }
+#btnEncrypt{
+  margin: 0 3%;  padding: 1rem;border: 3px white;  border-style: double;  border-radius: 1em; background-color: transparent; color: aliceblue; transition: box-shadow 0.2s ease-in-out;
+}
+#btnEncrypt:hover{ 
+  border-color: yellowgreen;  font-size: 17px;  cursor: progress;
+  box-shadow: 0 0 40px var(--color-green) inset, 0 0 10px 4px var(--color-green);
+}
+#btnDecrypt{
+  margin: 0 3% 0 3%;  padding: 1rem;border: 3px white;border-style: double;  border-radius: 2em; background-color: transparent; color: aliceblue; transition: box-shadow 0.2s ease-in-out;
+}
+#btnDecrypt:hover{ 
+  border-color: lightskyblue;  font-size: 17px;  cursor: progress;
+  box-shadow: 0 0 40px var(--color-orange) inset, 0 0 10px 4px var(--color-orange);
+}
+#btnCopy{
+  margin: 0 3% 0 3%;  padding: 1.4rem;border: 3px white;border-style: double;  border-radius: 4em; background-color: transparent; color: aliceblue; transition: box-shadow 0.2s ease-in-out;
+}
+#btnCopy:hover{ 
+  border-color: lightcoral;  font-size: 17px;  cursor: progress;
+  box-shadow: 0 0 40px var(--color-purple) inset, 0 0 10px 4px var(--color-purple);
+}
+#phar{
+  text-align: center;  font-size: 13px;margin-top: 0;  color: aliceblue;
+}
+.down{
+  display: flex;  justify-content: center;  width: 100%;  height: auto; margin: 25px 0 5px 0 ;     
+}
+#question{
+  width: auto; height: 180px; margin: 0 2% 0 2%;  
+}
+#answer{
+  width: auto; height: 180px; margin: 0 2% 0 2%; display: none; 
+}
+#secure{
+  width: auto; height: 180px; margin: 0 2% 0 2%; display: none; 
+}
+#textResult{
+  width:40%;  height: 50%;  justify-content: center;  text-align: center;  border: 3px white;  border-style: double;  border-radius: 1rem; background-color: transparent ;color: aliceblue; font-size: 16px;font-family: 'DynaPuff', cursive;
+}
+#alert{
+  text-align: center; font-size: 23px; margin-bottom: 20px; color:crimson;
+}
+#rights{
+  text-align: center;color: whitesmoke; font-size: 13px;
+}
+.pie{
+  display: flex; position:sticky ; justify-content: center;	font-size: 2rem; align-items: center;	z-index: 100;
+}
+.icon {
+	color: white;	text-decoration: none;	padding: .7rem;	display: flex;	transition: all .5s;
+}
+.icon-github {
+	background: #373737;
+}
+.icon-linkedin {
+	background: #0d57f8;  
+}
+.icon:first-child {
+	border-radius: 1rem 0 0 1rem;
+}
+.icon:last-child {
+	border-radius: 0 1rem 1rem 0;
+}
+.icon:hover {
+	padding-bottom: 1.5rem;
+	border-radius: 1rem 1rem 1rem 1rem ;
+	box-shadow: 0 0 1rem rgba(255, 1, 1, 1);
+}
+#btnCopy{
+display: none;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?j29ap2');
+  src:  url('fonts/icomoon.eot?j29ap2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?j29ap2') format('truetype'),
+    url('fonts/icomoon.woff?j29ap2') format('woff'),
+    url('fonts/icomoon.svg?j29ap2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
